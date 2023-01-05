@@ -1,6 +1,6 @@
 interface Maths {
     double PI = 3.14;
-    double calculate(int x, int y);
+    public double calculate(int x, int y);
 }
 
 // 1️⃣ FIRST
@@ -11,13 +11,6 @@ interface Maths {
 
 
 // ⬆️--------------------------------END HERE------------------------------⬆️
-class Add implements Maths {
-
-    public double calculate(int x, int y) {
-        return x+y;
-    }
-    
-}
 
 public class Calc {
     public static void main(String[] args) {
@@ -31,8 +24,5 @@ public class Calc {
 
 
         // ⬆️--------------------------------END HERE------------------------------⬆️
-        Add add = new Add();
-        System.out.println(add.calculate(1,6));
-        System.out.println(Add.PI);
     }
 }
